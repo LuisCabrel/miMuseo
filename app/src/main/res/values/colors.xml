@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00b0ff</color>
+    <color name="colorPrimaryDark">#0081cb</color>
+    <color name="colorAccent">#69e2ff</color>
+
+    <color name="colorSecondary">#ffcd00</color>
+    <color name="colorSecondaryDark">#c79d00</color>
+    <color name="colorSecondaryAccent">#ffff51</color>
+
+    <color name="colorCuadro">#ff6961</color>
+
+    <color name="crema">#efe4b0</color>
+    <color name="sky">#99D9EA</color>
+</resources>

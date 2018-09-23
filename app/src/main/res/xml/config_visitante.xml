@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferencias_visitante">
+    <EditTextPreference
+        android:key="ruidoVAR"
+        android:title="Ruido del proceso"
+        android:summary="ruido por aceleración"
+        android:inputType="numberDecimal"
+        android:defaultValue="0.05"/>
+
+    <ListPreference
+        android:key="matrizR"
+        android:title="Sensibilidad antena"
+        android:summary="configura el posicionamiento según el dispositivo"
+        android:entries="@array/tipoRSS0"
+        android:entryValues="@array/valoresRSS0"
+        android:defaultValue="7"/>
+
+</PreferenceScreen>

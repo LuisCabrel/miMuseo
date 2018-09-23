@@ -1,0 +1,301 @@
+{
+   bound_relative_root: {
+      x: 0.5,
+      y: 0,
+      z: 0.5,
+   },
+   materials: [
+      {
+         name: "SkinColor",
+         parameters: [
+            {
+               baseColor: [
+                  1,
+                  1,
+                  1,
+                  1,
+               ],
+            },
+            {
+               baseColorMap: "TrexColor01152015",
+            },
+            {
+               normalMap: null,
+            },
+            {
+               interpolatedColor: null,
+            },
+            {
+               metallic: 0,
+            },
+            {
+               metallicMap: null,
+            },
+            {
+               roughness: 1,
+            },
+            {
+               roughnessMap: null,
+            },
+            {
+               reflectance: 0.5,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/fbx_material.sfm",
+      },
+      {
+         name: "eyeColor",
+         parameters: [
+            {
+               baseColor: [
+                  1,
+                  1,
+                  1,
+                  1,
+               ],
+            },
+            {
+               baseColorMap: "TrexEyeColor",
+            },
+            {
+               normalMap: null,
+            },
+            {
+               interpolatedColor: null,
+            },
+            {
+               metallic: 0,
+            },
+            {
+               metallicMap: null,
+            },
+            {
+               roughness: 1,
+            },
+            {
+               roughnessMap: null,
+            },
+            {
+               reflectance: 0.5,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/fbx_material.sfm",
+      },
+      {
+         name: "blackMatteColor",
+         parameters: [
+            {
+               baseColor: [
+                  0,
+                  0,
+                  0,
+                  1,
+               ],
+            },
+            {
+               baseColorMap: null,
+            },
+            {
+               normalMap: null,
+            },
+            {
+               interpolatedColor: null,
+            },
+            {
+               metallic: 0,
+            },
+            {
+               metallicMap: null,
+            },
+            {
+               roughness: 1,
+            },
+            {
+               roughnessMap: null,
+            },
+            {
+               reflectance: 0.5,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/fbx_material.sfm",
+      },
+      {
+         name: "eyeTransparentColor",
+         parameters: [
+            {
+               baseColor: [
+                  1,
+                  1,
+                  1,
+                  1,
+               ],
+            },
+            {
+               baseColorMap: null,
+            },
+            {
+               normalMap: null,
+            },
+            {
+               interpolatedColor: null,
+            },
+            {
+               metallic: 0,
+            },
+            {
+               metallicMap: null,
+            },
+            {
+               roughness: 1,
+            },
+            {
+               roughnessMap: null,
+            },
+            {
+               reflectance: 0.5,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/fbx_material.sfm",
+      },
+      {
+         name: "teethTexture",
+         parameters: [
+            {
+               baseColor: [
+                  1,
+                  1,
+                  1,
+                  1,
+               ],
+            },
+            {
+               baseColorMap: null,
+            },
+            {
+               normalMap: null,
+            },
+            {
+               interpolatedColor: null,
+            },
+            {
+               metallic: 0,
+            },
+            {
+               metallicMap: null,
+            },
+            {
+               roughness: 1,
+            },
+            {
+               roughnessMap: null,
+            },
+            {
+               reflectance: 0.5,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/fbx_material.sfm",
+      },
+      {
+         name: "clawColor",
+         parameters: [
+            {
+               baseColor: [
+                  1,
+                  1,
+                  1,
+                  1,
+               ],
+            },
+            {
+               baseColorMap: null,
+            },
+            {
+               normalMap: null,
+            },
+            {
+               interpolatedColor: null,
+            },
+            {
+               metallic: 0,
+            },
+            {
+               metallicMap: null,
+            },
+            {
+               roughness: 1,
+            },
+            {
+               roughnessMap: null,
+            },
+            {
+               reflectance: 0.5,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/fbx_material.sfm",
+      },
+   ],
+   model: {
+      attributes: [
+         "Position",
+         "TexCoord",
+         "Orientation",
+      ],
+      collision: {},
+      file: "sampledata/Models/Dino/TrexByJoel3d.fbx",
+      name: "TrexByJoel3d",
+      recenter: "root",
+      scale: 0.164322,
+   },
+   samplers: [
+      {
+         file: "sampledata/Models/Dino\\TrexColor01152015.jpg",
+         name: "TrexColor01152015",
+         pipeline_name: "TrexColor01152015.jpg",
+      },
+      {
+         file: "sampledata/Models/Dino\\TrexBump012714.jpg",
+         name: "TrexBump012714",
+         params: {
+            usage_type: "Data",
+         },
+         pipeline_name: "TrexBump012714.jpg",
+      },
+      {
+         file: "sampledata/Models/Dino\\TrexSpec.png",
+         name: "TrexSpec",
+         pipeline_name: "TrexSpec.png",
+      },
+      {
+         file: "sampledata/Models/Dino\\TrexEyeColor.jpg",
+         name: "TrexEyeColor",
+         pipeline_name: "TrexEyeColor.jpg",
+      },
+      {
+         file: "sampledata/Models/Dino\\TrexTooth.png",
+         name: "TrexTooth",
+         params: {
+            usage_type: "Data",
+         },
+         pipeline_name: "TrexTooth.png",
+      },
+   ],
+   version: "0.52:1",
+}

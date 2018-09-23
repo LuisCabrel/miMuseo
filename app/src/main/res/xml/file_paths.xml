@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    <external-media-path name="my_images_1" path="miMuseo/Media/" />
+    <external-path name="my_images" path="miMuseo/Media/" />
+    <files-path name="my_images_3" path="miMuseo/Media/"/>
+    -->
+    <external-media-path name="my_images_1" path="miMuseo/Media/" />
+    <external-path name="my_images" path="miMuseo/Media/" />
+    <files-path name="my_images_3" path="miMuseo/Media/"/>
+</paths>

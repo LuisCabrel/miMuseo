@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nos.nakisha.org.miMuseoNOS">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Monitorear"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="Log in"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".FormularioActivity"
+            android:label="Calibración"
+            android:theme="@style/FormularioTheme" />
+        <activity
+            android:name=".PreferenciasActivity"
+            android:label="Preferencias"
+            android:theme="@style/PreferenciasTheme" />
+        <activity
+            android:name=".PreferenciasVisitanteActivity"
+            android:label="Preferencias"
+            android:theme="@style/PreferenciasTheme" />
+        <activity
+            android:name=".InsertarDatos"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".MuestreoEstatica"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".Trilateracion"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".KalmanEstatica"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".GestionBBDD"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".EntradaMuseo"
+            android:label="miMuseo"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".ModificarBalizasActivity"
+            android:label="Modificar tags"
+            android:theme="@style/FormularioTheme" />
+        <activity
+            android:name=".ModificarCuadrosActivity"
+            android:label="Modificar cuadros"
+            android:theme="@style/FormularioTheme" />
+        <activity
+            android:name=".RutaPropiaActivity"
+            android:label="Visita Libre"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".RutaGuiadaActivity"
+            android:label="Visita Guiada"
+            android:theme="@style/FormularioThemeTransition" />
+        <activity
+            android:name=".InfoDesarrolladorActivity"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".BorrarBBDDServidorActivity"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".ParametrosSigmaPActivity"
+            android:label="Actualizar Sigma y P"
+            android:theme="@style/FormularioTheme" />
+        <activity
+            android:name=".ModificarSalaActivity"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".EscenarioActivity"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".SelectorDeSalaActivity"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".SelectorDeCuadros"
+            android:label="Obras disponibles"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TiposDePosicionamientoActivity"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".InfoPrincipal"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".KalmanDin"
+            android:theme="@style/NoBarra" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/NoBarra">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PlayerActivity"
+            android:label=""
+            android:parentActivityName=".PlayerActivity"
+            android:theme="@style/PlayerTheme">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nos.nakisha.org.miMuseoNOS.PlayerActivity" />
+        </activity>
+        <activity
+            android:name=".SelectorDeMedia"
+            android:label="Audios disponibles"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".RealidadAumentada" />
+    </application>
+
+</manifest>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferencias_desarrollador">
+    <EditTextPreference
+        android:key="ruidoVAR"
+        android:title="Ruido del proceso"
+        android:summary="ruido por aceleración"
+        android:inputType="numberDecimal"
+        android:defaultValue="0.05"/>
+    <EditTextPreference
+        android:key="deltaT"
+        android:title="Delta de T"
+        android:summary="incremento de tiempos"
+        android:inputType="number"
+        android:defaultValue="250"/>
+
+    <ListPreference
+        android:key="movimiento"
+        android:title="Tipo de movimiento"
+        android:summary="se escoge el modelo de movimiento: aceleración cte, velocidad cte, estática"
+        android:entries="@array/tipoMovimiento"
+        android:entryValues="@array/valorestipoMovimiento"
+        android:defaultValue="0"/>
+
+    <ListPreference
+        android:key="matrizR"
+        android:title="Sensibilidad antena"
+        android:summary="configura el posicionamiento según el dispositivo"
+        android:entries="@array/tipoRSS0"
+        android:entryValues="@array/valoresRSS0"
+        android:defaultValue="7"/>
+
+    <ListPreference
+        android:key="segundosGuardado"
+        android:title="Segundos de guardado"
+        android:summary="determina durante cuántos segundos se recogerán datos al pulsar en GUARDAR en las opciones de posicionamiento"
+        android:entries="@array/segundos"
+        android:entryValues="@array/valoresSegundos"
+        android:defaultValue="1"/>
+
+    <EditTextPreference
+        android:key="norte"
+        android:title="Norte"
+        android:summary="ángulo que el Norte forma con el Origen de Coordenadas Absoluto "
+        android:inputType="numberDecimal"
+        android:defaultValue="0"/>
+
+
+</PreferenceScreen>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_1"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:title=" Visita Guiada" />
+        <item
+            android:id="@+id/nav_2"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title=" Visita Libre" />
+        <item
+            android:id="@+id/nav_3"
+            android:icon="@android:drawable/stat_sys_headset"
+            android:title=" Audioguía" />
+        <item
+            android:id="@+id/nav_4"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title=" R. Aumentada" />
+
+    </group>
+
+    <item android:title="Acciones adicionales">
+        <menu>
+            <item
+                android:id="@+id/nav_informacionPpal"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="Información" />
+            <item
+                android:id="@+id/nav_opcionesVisitante"
+                android:icon="@android:drawable/ic_menu_preferences"
+                android:title="Configuración" />
+            <item
+                android:id="@+id/nav_desarrollador"
+                android:icon="@android:drawable/ic_lock_idle_lock"
+                android:title="Desarrollador" />
+        </menu>
+    </item>
+
+</menu>

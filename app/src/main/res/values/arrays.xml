@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="tipoMovimiento">
+        <item>P</item>
+        <item>PV</item>
+        <item>PVA</item>
+    </string-array>
+    <string-array name="valorestipoMovimiento">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="tipoRSS0">
+        <item>-84</item>
+        <item>-82</item>
+        <item>-80</item>
+        <item>-77</item>
+        <item>-76</item>
+        <item>-75</item>
+        <item>-74</item>
+        <item>-73</item>
+        <item>-72</item>
+        <item>-71</item>
+        <item>-70</item>
+        <item>-69</item>
+        <item>-68</item>
+        <item>-67</item>
+    </string-array>
+    <string-array name="valoresRSS0">
+        <item>13</item>
+        <item>12</item>
+        <item>11</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="segundos">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>Indefinido</item>
+    </string-array>
+    <string-array name="valoresSegundos">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

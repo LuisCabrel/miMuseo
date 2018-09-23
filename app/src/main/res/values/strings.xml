@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">miMuseo</string>
+    <string name="drawer_open">navigation drawer abierto</string>
+    <string name="drawer_close">navigation drawer cerrado</string>
+    <string name="title_activity_entrada_museo">EntradaMuseo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="infoBienvenida">Aquí comienza su visita. Deseamos que disfrute de la experiencia.</string>
+
+    <string name="infoPeligro">Se borrará la BBDD del Servidor al pulsar el botón rojo redondo.
+        \nAsegúrese de enviar a continuación la información actualizada.
+        \nAntes de salir de esta pantalla, espere a leer los 4 mensajes de borrado: el de parámetros, el de balizas, el de cuadros y el de sigma y p.
+    </string>
+
+    <string name="infoDesarrollador">Área para que el desarrollador determine los parámetros del escenario donde se va a llevar a cabo el posicionamiento.
+    \n\n\n Definir Escenario: en la pantalla principal para definir escenarios se pueden añadir salas (con valores por defecto) borrar salas y modificar salas añadidas previamente. Tras añadir una sala, para ajustarla a los valores reales, será necesario modificarla. Al poner el nº de la sala que se quiere modificar y pulsar en MODIFICAR, se llega a una pantalla donde se piden los siguientes valores:
+        \n\t\t -origen de coordenadas de dicha sala en coordenadas absolutas a las del museo
+        \n\t\t -ángulo que forma la pared de mayor longitud con el Norte geográfico (existe una brújula para facilitar su determinación y un botón de CAPTURAR ÁNGULO),
+        \n\t\t -dimensiones del escenario (rectangular),
+        \n Al terminar de introducir los nuevos valores, se pulsa en ACTUALIZAR, y ya se puede proceder a la inserción de tags y cuadros, pulsando en AÑADIR TAGS Y CUADROS. Tras ésto, vamos a una nueva pantalla con dos pestañas, en la cual insertaremos las características de los elementos de la sala donde nos encontramos: posición del elemento, identificador (para tags), nombre y url relacionada (para cuadros).
+
+
+    \n\n\n Calibrar Sensores: una vez están todos los datos necesarios de un escenario, desde aquí se procede a la recogida de RSSI (Received Signal Strengh) desde cada punto que se desee estudiar y la subida de estos valores (junto con la posición del desarrollador durante el muestreo y la posición del tag).
+        Tras el muestreo, en esta pantalla (Botón SIGUIENTE) se procede al calculo de sigmaRSS+biass (desviación de la medida+desviación respecto de la señal esperada) y p (exponente de la ecuación de Path Loss).
+
+    \n\n\n Posicionar usuario: aquí podremos elegir el método de posicionamiento y ver las estimaciones de dicho método sobre un canvas.
+        \n\t\t -Escenario Trilateración.
+        \n\t\t -Escenario Trilateración Desacoplada con Kalman.
+        \n\t\t -Escenario Trilateración Integrada con Kalman.
+    \n En todos los métodos, se pueden recoger los valores estimados en un fichero en la memoria Interna, en Download, mimuseo y acceso al fichero por su nombre (contiene la hora de creación)
+
+    \n\n\n Resumen de Contenido y Gestión de BBDD: en esta pantalla hay dos pestañas:
+        \n\t\t -la primera: resumen de todo lo añadido en el museo con el que se logeó
+        \n\t\t -la segunda: ofrece distintas posibilidades:
+        \n\t\t\t\t 1.-subir los datos al servidor.
+        \n\t\t\t\t 2.-descargarse los datos que hubiera en el servidor. Antes de descargarse los datos del servidor, habrá que hacer un borrado de la BBDD local para evitar que la información se duplique.
+        \n\t\t\t\t 3.-hacer un borrado de la base de datos local para evitar posibles problemas en la calibración de distintos escenarios.
+        \n\t\t\t\t 4.-borrar los datos del museo (con el que se logeó) del servidor. Esta opción se deberá hacer primero antes de subir nuevos datos (es la forma de actualizar: primero se borra del servidor los datos que hubiera de este museo y seguidamente se sube la información actualizada.
+    </string>
+    <string name="informacionGeneral">Esta aplicación ha sido desarrollada por Nuria Ortega Sánchez.\n
+
+        Se ha desarrollado en dos etapas: en una PRIMERA ETAPA como Trabajo de Fin de Grado.
+        Se trata de un prototipo para proporcionar información aumentada en visitas a museos usando técnicas de localización en interiores con tecnología
+        Bluetooth Low Energy.\n
+        La aplicación miMuseo guía al usuario por el museo para ayudarle a encontrar las obras de arte
+        que busque seleccionando la opción Visita Guiada. También le proporciona información ampliada
+        del cuadro más cercano a él pulsando sobre Visita Libre.
+        El usuario también puede usar las opciones de Mapa para localizarse en el museo y Pedir Ayuda para que
+        un miembro del personal del museo acuda a su posición.
+        Esta aplicación funciona en todo el conjunto de museos que forman parte de la aplicación. \n
+        \n
+        En la SEGUNDA ETAPA, como Tabajo de Fin de Master.
+        En esta etapa de ampliación se ha incorporado características muy demandadas actualmente en los museos.\n
+        Para su desarrollo se ha tenido más presente al usuario final ya que la primera fase se centró en el desarrollador.\n
+        Las novedades más importantes son las opciones de Audioguía y Realidad Aumentada, que consisten en nuevas formas de presentarle el contenido a los usuarios.\n
+        Para incorporarlas se han tenido que modificar distintas clases e interfaces en el perfil desarrollador, además de un cambio en la BBDD y en los archivos de intercambio de información con el servidor.\n
+        Como se acaba de mencionar, el usuario se ha tenido muy presente para el desarrollo y esto se refleja en cómo se han perfeccionado distintos detalles para mejorar la experiencia de usuario:
+        incorporación de splash screen, animación dropdown para dar a entender que se trata de una lista deslizable,
+        un cajón de navegación más vistoso y con vínculo a la página del desarrollador, uso de CardViews en los RecyclerView,
+        mostrar una fotografía de la obra de la que se habla para ayudar al usuario a reconocer el contenido,
+        uso de SearchView para encontrar más cómodamente una obra, transiciones entre un CardView concreto y su contenido,
+        acceso a la compra de tickets desde la app, incorporación de cuadros de diálogo explicativos en las opciones complejas,
+        capacidad de compartir con tus contactos el contenido del museo para fomentar la cultura,
+        uso de mascotas-guía_de_museo en la Realidad Aumentada que intentan captar la atención de los más pequeños
+        y hacen la explicación más amena, tomar fotografías desde la app, incorporar la flecha de volver a atrás en toolbar, poder llamar a emergencias, etc.\n
+        \n
+        \n
+        Agradecimientos:\n
+        \n
+        A mis tutores y profesores, por hacer que a sus alumnos les encante Android.
+        \n
+        \n
+        Recursos:\n
+        \n
+        Los iconos usados en los botones de la pantalla principal se han descargado de Flaticon
+        ( https://www.flaticon.com/ )  \n
+		Icon made by Pixel Buddha from www.flaticon.com  \n
+        Icon made by Freepik from www.flaticon.com   \n
+        \n
+		Los modelos 3d gratuitos para la Realidad Aumentada han sido descargados desde TurboSquid.
+
+    </string>
+
+    <string name="action_settings">Settings</string>
+    <string name="appbar_scrolling_view_behavior"></string>
+    <string name="title_activity_info_visita_libre">InfoVisitaLibre</string>
+
+
+    <string name="transition_fab">transition_fab</string>
+    <string name="transition_cuadro">transition_cuadro</string>
+    <string name="transition_logo">transition_logo</string>
+</resources>
